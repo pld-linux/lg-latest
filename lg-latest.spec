@@ -34,7 +34,7 @@ cp -ar * $RPM_BUILD_ROOT%{_defaultdocdir}/LinuxGazette
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %{_defaultdocdir}/LinuxGazette/issue91
 %{_defaultdocdir}/LinuxGazette/issue92
