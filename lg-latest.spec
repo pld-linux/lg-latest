@@ -1,7 +1,7 @@
 Summary:	LinuxGazette - latest issues
 Summary(pl):	LinuxGazette - najnowsze wydania
 Name:		lg-latest
-Version:	110
+Version:	111
 Release:	1
 License:	distributable
 Group:		Documentation
@@ -25,6 +25,8 @@ Source8:	http://linuxgazette.net/ftpfiles/lg-109.tar.gz
 # Source8-md5:	c532e530cab4ae1109e9116131ebc440
 Source9:	http://linuxgazette.net/ftpfiles/lg-110.tar.gz
 # Source9-md5:	f99a933ad92bdd55d873942117ab0135
+Source10:	http://linuxgazette.net/ftpfiles/lg-%{version}.tar.gz
+# Source10-md5:	6e3e64979922ae30f916c45eb6edc82b
 URL:		http://www.linuxgazette.net/
 Requires:	lg-base >= %{version}
 Conflicts:	lg-issue101to110
