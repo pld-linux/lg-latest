@@ -1,22 +1,24 @@
 Summary:	LinuxGazette - latest issues
 Summary(pl):	LinuxGazette - najnowsze wydania
 Name:		lg-latest
-Version:	96
+Version:	97
 Release:	1
 License:	distributable
 Group:		Documentation
 Source0:	ftp://ftp.ssc.com/pub/lg/lg-issue91.tar.gz
 # Source0-md5:	a652b799eaf3f6daa71d59b27cdf7817
 Source1:	ftp://ftp.ssc.com/pub/lg/lg-issue92.tar.gz
-# Source1-md5:	59928e73c7506f5dafedc24881fc7d95
+# Source1-md5:	ee503aa00810ffaf91c4844598933bf8
 Source2:	ftp://ftp.ssc.com/pub/lg/lg-issue93.tar.gz
-# Source2-md5:	3c3148e6e2bccf8e8aefe425a4d6c3a6
+# Source2-md5:	ebdf12c1ebeb3ffdb62c904fb4126f63
 Source3:	ftp://ftp.ssc.com/pub/lg/lg-issue94.tar.gz
-# Source3-md5:	0dcf298194707abe341fd8fff001a2dd
+# Source3-md5:	221526fd6c62808220696eabe1abe504
 Source4:	ftp://ftp.ssc.com/pub/lg/lg-issue95.tar.gz
-# Source4-md5:	27595659d046b1d88fd933995cfc8111
+# Source4-md5:	55049792d023af7b5599878653cb05e4
 Source5:	ftp://ftp.ssc.com/pub/lg/lg-issue96.tar.gz
-# Source5-md5:	df78a45f9ef2be0ba2950910c68c44b1
+# Source5-md5:	3f61f13295a8cbbd2cdeb3f2f7416701
+Source6:	ftp://ftp.ssc.com/pub/lg/lg-issue97.tar.gz
+# Source6-md5:	879ea894af7e5ab9927cde993986c95b
 URL:		http://www.linuxgazette.com/
 Requires:	lg-base >= %{version}
 Conflicts:	lg-issue91to100
@@ -30,7 +32,7 @@ This package contains latest issues of LinuxGazette.
 Ten pakiet zawiera najnowsze wydania LinuxGazette.
 
 %prep
-%setup -q -n lg -b1 -b2 -b3 -b4 -b5
+%setup -q -n lg -b1 -b2 -b3 -b4 -b5 -b6
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -48,3 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_defaultdocdir}/LinuxGazette/issue94
 %{_defaultdocdir}/LinuxGazette/issue95
 %{_defaultdocdir}/LinuxGazette/issue96
+%{_defaultdocdir}/LinuxGazette/issue97
