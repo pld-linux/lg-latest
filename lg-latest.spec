@@ -16,7 +16,7 @@ Source6:	ftp://ftp.ssc.com/pub/lg/lg-issue87.tar.gz
 Source7:	ftp://ftp.ssc.com/pub/lg/lg-issue88.tar.gz
 Source8:	ftp://ftp.ssc.com/pub/lg/lg-issue89.tar.gz
 Source9:	ftp://ftp.ssc.com/pub/lg/lg-issue90.tar.gz
-URL:		http://www.linuxgazette.org/
+URL:		http://www.linuxgazette.com/
 Requires:	lg-base >= %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
