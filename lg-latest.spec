@@ -1,4 +1,3 @@
-# TODO: unpack all in single %setup, w/o '/' in -n (let --clean work)
 Summary:	LinuxGazette - latest issues
 Summary(pl):	LinuxGazette - najnowsze wydania
 Name:		lg-latest
