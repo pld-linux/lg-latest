@@ -26,18 +26,10 @@ This package contains latest issues of LinuxGazette.
 Ten pakiet zawiera najnowsze wydania LinuxGazette.
 
 %prep
-%setup -q       -n lg/issue81
-%setup -q -b 1  -n lg/issue82
-%setup -q -b 2  -n lg/issue83
-%setup -q -b 3  -n lg/issue84
-%setup -q -b 4  -n lg/issue85
-%setup -q -b 5  -n lg/issue86
-%setup -q -b 6  -n lg/issue87
-%setup -q -b 7  -n lg/issue88
+%setup -q -n lg -b1 -b2 -b3 -b4 -b5 -b6 -b7
 
 %install
 rm -rf $RPM_BUILD_ROOT
-cd ..
 install -d $RPM_BUILD_ROOT%{_defaultdocdir}/LinuxGazette
 cp -ar * $RPM_BUILD_ROOT%{_defaultdocdir}/LinuxGazette
 
