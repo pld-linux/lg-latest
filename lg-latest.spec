@@ -1,12 +1,14 @@
 Summary:	LinuxGazette - latest issues
 Summary(pl):	LinuxGazette - najnowsze wydania
 Name:		lg-latest
-Version:	91
+Version:	92
 Release:	1
 License:	distributable
 Group:		Documentation
-# Source0-md5:	07c40ae01af90ba1760675ba1d4bbc5a
 Source0:	ftp://ftp.ssc.com/pub/lg/lg-issue91.tar.gz
+# Source0-md5:	07c40ae01af90ba1760675ba1d4bbc5a
+Source1:	ftp://ftp.ssc.com/pub/lg/lg-issue92.tar.gz
+# Source1-md5:	59928e73c7506f5dafedc24881fc7d95
 URL:		http://www.linuxgazette.com/
 Requires:	lg-base >= %{version}
 Conflicts:	lg-issue91to100
@@ -20,7 +22,7 @@ This package contains latest issues of LinuxGazette.
 Ten pakiet zawiera najnowsze wydania LinuxGazette.
 
 %prep
-%setup -q -n lg
+%setup -q -n lg -b1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -33,3 +35,4 @@ rm -rf $RPM_BUILD_ROOT
 %files 
 %defattr(644,root,root,755)
 %{_defaultdocdir}/LinuxGazette/issue91
+%{_defaultdocdir}/LinuxGazette/issue92
