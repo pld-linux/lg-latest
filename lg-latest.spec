@@ -1,7 +1,7 @@
 Summary:	LinuxGazette - latest issues
 Summary(pl):	LinuxGazette - najnowsze wydania
 Name:		lg-latest
-Version:	108
+Version:	109
 Release:	1
 License:	distributable
 Group:		Documentation
@@ -21,6 +21,8 @@ Source6:	http://linuxgazette.net/ftpfiles/lg-107.tar.gz
 # Source6-md5:	2a198c13c42903c425415226fdb74337
 Source7:	http://linuxgazette.net/ftpfiles/lg-108.tar.gz
 # Source7-md5:	da820b616b24349628ec6f44ed1c534c
+Source8:	http://linuxgazette.net/ftpfiles/lg-109.tar.gz
+# Source8-md5:	c532e530cab4ae1109e9116131ebc440
 URL:		http://www.linuxgazette.net/
 Requires:	lg-base >= %{version}
 Conflicts:	lg-issue101to110
@@ -34,7 +36,7 @@ This package contains latest issues of LinuxGazette.
 Ten pakiet zawiera najnowsze wydania LinuxGazette.
 
 %prep
-%setup -q -n lg -b1 -b2 -b3 -b4 -b5 -b6 -b7
+%setup -q -n lg -b1 -b2 -b3 -b4 -b5 -b6 -b7 -b8
 mv -f 101 issue101
 mv -f 102 issue102
 mv -f 103 issue103
@@ -43,6 +45,7 @@ mv -f 105 issue105
 mv -f 106 issue106
 mv -f 107 issue107
 mv -f 108 issue108
+mv -f 109 issue109
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -62,3 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_defaultdocdir}/LinuxGazette/issue106
 %{_defaultdocdir}/LinuxGazette/issue107
 %{_defaultdocdir}/LinuxGazette/issue108
+%{_defaultdocdir}/LinuxGazette/issue109
