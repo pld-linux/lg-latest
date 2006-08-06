@@ -1,7 +1,7 @@
 Summary:	LinuxGazette - latest issues
 Summary(pl):	LinuxGazette - najnowsze wydania
 Name:		lg-latest
-Version:	128
+Version:	129
 Release:	1
 License:	distributable
 Group:		Documentation
@@ -20,7 +20,9 @@ Source5:	http://linuxgazette.net/ftpfiles/lg-126.tar.gz
 Source6:	http://linuxgazette.net/ftpfiles/lg-127.tar.gz
 # Source6-md5:	1894d6a2ce7972daced5a2a1cd18856d
 Source7:	http://linuxgazette.net/ftpfiles/lg-128.tar.gz
-# Source7-md5:	9d85997cc3280974ce9ec6452a607f4b
+# Source7-md5:	fad67eb48228bbb38fe965d591bcfb48
+Source8:	http://linuxgazette.net/ftpfiles/lg-129.tar.gz
+# Source8-md5:	eea41afbedb6f93b17d3e50ac0f3ea85
 URL:		http://www.linuxgazette.net/
 Requires:	lg-base >= %{version}
 Conflicts:	lg-issue121to130
@@ -34,7 +36,7 @@ This package contains latest issues of LinuxGazette.
 Ten pakiet zawiera najnowsze wydania LinuxGazette.
 
 %prep
-%setup -q -n lg -b1 -b2 -b3 -b4 -b5 -b6 -b7
+%setup -q -n lg -b1 -b2 -b3 -b4 -b5 -b6 -b7 -b8
 mv -f 121 issue121
 mv -f 122 issue122
 mv -f 123 issue123
@@ -43,6 +45,7 @@ mv -f 125 issue125
 mv -f 126 issue126
 mv -f 127 issue127
 mv -f 128 issue128
+mv -f 129 issue129
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -62,3 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_defaultdocdir}/LinuxGazette/issue126
 %{_defaultdocdir}/LinuxGazette/issue127
 %{_defaultdocdir}/LinuxGazette/issue128
+%{_defaultdocdir}/LinuxGazette/issue129
