@@ -21,7 +21,7 @@ Source6:	http://linuxgazette.net/ftpfiles/lg-127.tar.gz
 # Source6-md5:	1894d6a2ce7972daced5a2a1cd18856d
 Source7:	http://linuxgazette.net/ftpfiles/lg-128.tar.gz
 # Source7-md5:	fad67eb48228bbb38fe965d591bcfb48
-Source8:	http://linuxgazette.net/ftpfiles/lg-129.tar.gz
+Source8:	http://linuxgazette.net/ftpfiles/lg-%{version}.tar.gz
 # Source8-md5:	eea41afbedb6f93b17d3e50ac0f3ea85
 URL:		http://www.linuxgazette.net/
 Requires:	lg-base >= %{version}
@@ -50,7 +50,7 @@ mv -f 129 issue129
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_defaultdocdir}/LinuxGazette
-cp -ar * $RPM_BUILD_ROOT%{_defaultdocdir}/LinuxGazette
+cp -a * $RPM_BUILD_ROOT%{_defaultdocdir}/LinuxGazette
 
 %clean
 rm -rf $RPM_BUILD_ROOT
