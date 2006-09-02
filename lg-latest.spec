@@ -49,20 +49,20 @@ mv -f 129 issue129
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_defaultdocdir}/LinuxGazette
-cp -a * $RPM_BUILD_ROOT%{_defaultdocdir}/LinuxGazette
+install -d $RPM_BUILD_ROOT%{_docdir}/LinuxGazette
+cp -a * $RPM_BUILD_ROOT%{_docdir}/LinuxGazette
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_defaultdocdir}/LinuxGazette/issue121
-%{_defaultdocdir}/LinuxGazette/issue122
-%{_defaultdocdir}/LinuxGazette/issue123
-%{_defaultdocdir}/LinuxGazette/issue124
-%{_defaultdocdir}/LinuxGazette/issue125
-%{_defaultdocdir}/LinuxGazette/issue126
-%{_defaultdocdir}/LinuxGazette/issue127
-%{_defaultdocdir}/LinuxGazette/issue128
-%{_defaultdocdir}/LinuxGazette/issue129
+%{_docdir}/LinuxGazette/issue121
+%{_docdir}/LinuxGazette/issue122
+%{_docdir}/LinuxGazette/issue123
+%{_docdir}/LinuxGazette/issue124
+%{_docdir}/LinuxGazette/issue125
+%{_docdir}/LinuxGazette/issue126
+%{_docdir}/LinuxGazette/issue127
+%{_docdir}/LinuxGazette/issue128
+%{_docdir}/LinuxGazette/issue129
