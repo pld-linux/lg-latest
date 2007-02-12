@@ -1,5 +1,5 @@
 Summary:	LinuxGazette - latest issues
-Summary(pl):	LinuxGazette - najnowsze wydania
+Summary(pl.UTF-8):   LinuxGazette - najnowsze wydania
 Name:		lg-latest
 Version:	134
 Release:	1
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains latest issues of LinuxGazette.
 
-%description -l pl
+%description -l pl.UTF-8
 Ten pakiet zawiera najnowsze wydania LinuxGazette.
 
 %prep
