@@ -1,5 +1,5 @@
 Summary:	LinuxGazette - latest issues
-Summary(pl.UTF-8):   LinuxGazette - najnowsze wydania
+Summary(pl.UTF-8):	LinuxGazette - najnowsze wydania
 Name:		lg-latest
 Version:	134
 Release:	1
