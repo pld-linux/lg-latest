@@ -1,12 +1,13 @@
 Summary:	LinuxGazette - latest issues
 Summary(pl.UTF-8):	LinuxGazette - najnowsze wydania
 Name:		lg-latest
-Version:	151
+Version:	152
 Release:	1
 License:	distributable
 Group:		Documentation
-Source0:	http://linuxgazette.net/ftpfiles/lg-%{version}.tar.gz
+Source0:	http://linuxgazette.net/ftpfiles/lg-151.tar.gz
 # Source0-md5:	323a599056403da8d01a271067100036
+Source1:	http://linuxgazette.net/ftpfiles/lg-152.tar.gz
 URL:		http://www.linuxgazette.net/
 Requires:	lg-base >= %{version}
 Conflicts:	lg-issue151to160
@@ -20,8 +21,7 @@ This package contains latest issues of LinuxGazette.
 Ten pakiet zawiera najnowsze wydania LinuxGazette.
 
 %prep
-%setup -q -n lg
-#-b1
+%setup -q -n lg -b1
 for i in 1*; do mv $i issue$i; done
 
 %install
