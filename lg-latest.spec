@@ -8,6 +8,7 @@ Group:		Documentation
 Source0:	http://linuxgazette.net/ftpfiles/lg-151.tar.gz
 # Source0-md5:	323a599056403da8d01a271067100036
 Source1:	http://linuxgazette.net/ftpfiles/lg-152.tar.gz
+# Source1-md5:	9f0fb42dcb73771c962a3db1261b4390
 URL:		http://www.linuxgazette.net/
 Requires:	lg-base >= %{version}
 Conflicts:	lg-issue151to160
